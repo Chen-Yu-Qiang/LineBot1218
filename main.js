@@ -24,7 +24,7 @@ let lineEvent = function (event) {
         if (event.type === 'message') {
             if (event.message.type === 'text') {
                 let text = event.message.text
-                if (/[Hh]i|嗨/.test(text)) {
+                if (/[Hh]i|嗨|123/.test(text)) {
                     let response = 'Hi'
                     reply(event, response).then(function () {
                         resolve()
